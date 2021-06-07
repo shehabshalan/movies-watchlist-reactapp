@@ -18,6 +18,7 @@ export const GlobalProvider = (props) => {
     useEffect(() => {
         localStorage.setItem('watchlist', JSON.stringify(state.watchlist))
         localStorage.setItem('watched', JSON.stringify(state.wathced))
+        console.log(state.watchlist)
     }, [state])
 
     // actions 
